@@ -39,10 +39,10 @@ class Dropdown(discord.ui.Select):
 
         # Index page
         if self.values[0] == "Index":
-            em = discord.Embed(title = "**Shinobi Bot Help**",
+            em = discord.Embed(title = "**fire-bot Bot Help**",
                            description = "Hello! Welcome to the help page.\n\nUse </feedback:1027218853127794780> to send your feedback directly to the developers.\nUse `/help <category> <command>` for more info on a command.\nUse the dropdown menu below to select a category.\n\n",
                            color = 0x2F3136)
-            em.add_field(name = "**Who are you?**", value = "I'm a bot developed by @shinobi7k. I'm a multipurpose bot than can do _almost_ anything. You can get more info using the dropdown menu below.\n\nI'm also open source. You can see my code on [GitHub](https://github.com/mayman007/ShinobiBot)!")
+            em.add_field(name = "**Who are you?**", value = "I'm a bot developed by @networker_project2024. I'm a multipurpose bot than can do _almost_ anything. You can get more info using the dropdown menu below.\n\nI'm also open source. You can see my code on [GitHub](https://github.com/mayman007/transatlantic-protect)!")
             em.add_field(name = "**Features**", value = "- Advanced Ticket System\n- Anti-Spam System\n- Logging System\n- Suggestions\n- Moderation\n- Games\n- Utility")
             await interaction.message.edit(embed = em)
             await interaction.response.defer()
@@ -171,15 +171,15 @@ class Help(commands.GroupCog, name = "help"):
         em.add_field(name = "**Who are you?**", value = "I'm a bot developed by @shinobi7k. I'm a multipurpose bot than can do _almost_ anything. You can get more info using the dropdown menu below.\n\nI'm also open source. You can see my code on [GitHub](https://github.com/mayman007/ShinobiBot)!")
         em.add_field(name = "**Features**", value = "- Advanced Ticket System\n- Anti-Spam System\n- Logging System\n- Suggestions\n- Moderation\n- Games\n- Utility")
         view = DropdownView()
-        view.add_item(discord.ui.Button(label = "Invite Shinobi Bot", style = discord.ButtonStyle.link, url = "https://discord.com/oauth2/authorize?client_id=855437723166703616&permissions=8&scope=bot%20applications.commands"))
-        view.add_item(discord.ui.Button(label = "Support Server", style = discord.ButtonStyle.link, url = "https://discord.gg/YScaCDY7PN"))
-        view.add_item(discord.ui.Button(label = "Vote For Us", style = discord.ButtonStyle.link, url = "https://top.gg/bot/855437723166703616", emoji = "💌"))
+        view.add_item(discord.ui.Button(label = "Invite fire Bot", style = discord.ButtonStyle.link, url = "https://discord.com/oauth2/authorize?client_id=1232653293872877609"))
+        view.add_item(discord.ui.Button(label = "Support Server", style = discord.ButtonStyle.link, url = "https://discord.gg/inter-dev-projet-neptune-community-and-developper-1235157719409885184"))
+        view.add_item(discord.ui.Button(label = "Vote For Us", style = discord.ButtonStyle.link, url = "https://discord.gg/inter-dev-projet-neptune-community-and-developper-1235157719409885184", emoji = "💌"))
         await interaction.response.send_message(embed = em, view = view)
 
 #=====================================================================================================================
 
     #moderation commands help
-    @app_commands.command(name = "moderation", description = "Shinobi Bot's moderation catogery help.")
+    @app_commands.command(name = "moderation", description = "fire-bot Bot's moderation catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -338,7 +338,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #utility commands help
-    @app_commands.command(name = "utility", description = "Shinobi Bot's utility catogery help.")
+    @app_commands.command(name = "utility", description = "fire-bot Bot's utility catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -445,7 +445,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     # AI commands help
-    @app_commands.command(name = "artificial-intelligence", description = "Shinobi Bot's artificial intelligence catogery help.")
+    @app_commands.command(name = "artificial-intelligence", description = "fire-bot Bot's artificial intelligence catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -474,7 +474,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     # Anime commands help
-    @app_commands.command(name = "anime", description = "Shinobi Bot's anime and manga catogery help.")
+    @app_commands.command(name = "anime", description = "fire-bot Bot's anime and manga catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -510,7 +510,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #logs commands help
-    @app_commands.command(name = "logs", description = "Shinobi Bot's logs catogery help.")
+    @app_commands.command(name = "logs", description = "fire-bot Bot's logs catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -644,7 +644,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #ticket commands help
-    @app_commands.command(name = "tickets", description = "Shinobi Bot's ticket catogery help.")
+    @app_commands.command(name = "tickets", description = "fire-bot Bot's ticket catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -701,7 +701,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #censor commands help
-    @app_commands.command(name = "censor", description = "Shinobi Bot's Censor System catogery help.")
+    @app_commands.command(name = "censor", description = "fire-bot Bot's Censor System catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -772,7 +772,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #antispam commands help
-    @app_commands.command(name = "antispam", description = "Shinobi Bot's anti-spam catogery help.")
+    @app_commands.command(name = "antispam", description = "fire-bot Bot's anti-spam catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -808,7 +808,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #settings commands help
-    @app_commands.command(name = "settings", description = "Shinobi Bot's settings catogery help.")
+    @app_commands.command(name = "settings", description = "fire-bot Bot's settings catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -890,7 +890,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #fun commands help
-    @app_commands.command(name = "fun", description = "Shinobi Bot's fun catogery help.")
+    @app_commands.command(name = "fun", description = "fire-bot Bot's fun catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -989,7 +989,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #games commands help
-    @app_commands.command(name = "games", description = "Shinobi Bot's games catogery help.")
+    @app_commands.command(name = "games", description = "fire-bot Bot's games catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
@@ -1019,7 +1019,7 @@ class Help(commands.GroupCog, name = "help"):
             await interaction.response.send_message(embed = em)
 
     #serverinformation commands help
-    @app_commands.command(name = "serverinformation", description = "Shinobi Bot's server information catogery help.")
+    @app_commands.command(name = "serverinformation", description = "fire-bot Bot's server information catogery help.")
     @app_commands.describe(command = "Choose a command to get info about it.")
     @app_commands.checks.cooldown(1, 5, key = lambda i: (i.user.id))
     @app_commands.choices(command = [
